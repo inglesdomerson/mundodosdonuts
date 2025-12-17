@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manual Anti-Reprovação – Prova Prática do Detran</title>
+<title>Manual Anti-Reprovação – Prova Prática</title>
 
 <style>
 body{
@@ -14,32 +14,26 @@ body{
 }
 
 /* SEÇÕES */
-.section{
-  padding:40px 20px;
-}
+.section{padding:40px 20px;}
 .dark{background:#111;color:#fff;}
 .yellow{background:#ffcc00;}
 .light{background:#ffffff;}
 .gray{background:#eaeaea;}
 
-.container{
-  max-width:900px;
-  margin:auto;
-}
+.container{max-width:900px;margin:auto;}
 
 /* TEXTO */
 h1,h2{text-align:center;}
 h1{font-size:30px;}
 h2{font-size:24px;}
 p{font-size:17px;line-height:1.5;}
-
 .list{padding-left:20px;}
 .list li{margin-bottom:10px;}
 
 /* IMAGENS */
 .img{
   width:100%;
-  max-width:600px;
+  max-width:620px;
   margin:25px auto;
   display:block;
   border-radius:8px;
@@ -65,13 +59,30 @@ p{font-size:17px;line-height:1.5;}
 .old{text-decoration:line-through;color:#777;}
 .new{font-size:38px;color:#0a7a2f;font-weight:800;}
 
-/* DEPOIMENTOS */
-.testimonial{
-  background:#fff;
-  padding:20px;
+/* CARROSSEL BÔNUS */
+.carousel{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  padding:20px 0;
+}
+.carousel img{
+  width:260px;
   border-radius:8px;
-  margin-bottom:20px;
-  box-shadow:0 4px 10px rgba(0,0,0,.08);
+  flex-shrink:0;
+}
+
+/* DEPOIMENTOS */
+.testimonials{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.testimonials img{
+  width:100%;
+  max-width:420px;
+  border-radius:8px;
 }
 
 /* POPUP */
@@ -95,15 +106,21 @@ p{font-size:17px;line-height:1.5;}
   left:0;
   right:0;
   background:#0a7a2f;
-  padding:12px;
+  padding:14px;
   text-align:center;
   z-index:1000;
+  animation:pulse 1.6s infinite;
 }
 .floating a{
   color:#fff;
   font-size:18px;
   font-weight:700;
   text-decoration:none;
+}
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.03);}
+  100%{transform:scale(1);}
 }
 </style>
 </head>
@@ -113,30 +130,27 @@ p{font-size:17px;line-height:1.5;}
 <!-- HERO -->
 <div class="section yellow">
   <div class="container">
-    <h1>⚠️ VAI FAZER A PROVA PRÁTICA DO DETRAN?</h1>
+    <h1>ERROS SIMPLES REPROVAM NA PROVA PRÁTICA</h1>
     <p style="text-align:center;">
-      Evite os erros que mais reprovam candidatos todos os dias.
+      Evite os erros que mais eliminam candidatos.
     </p>
-
-    <!-- IMAGEM HERO -->
-    <img src="cabeça.jpeg.png" class="img" alt="Prova prática do Detran">
+    <img src="LINK-IMAGEM-HERO.jpg" class="img" alt="Manual Anti-Reprovação">
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
+      EVITE A REPROVAÇÃO AGORA
+    </a>
   </div>
 </div>
 
-<!-- IDENTIFICAÇÃO -->
+<!-- DOR -->
 <div class="section dark">
   <div class="container">
-    <p>
-      Você treinou. Pagou autoescola.  
-      Mas na hora da prova:
-    </p>
     <ul class="list">
-      <li>✔ a perna treme</li>
-      <li>✔ o carro dá tranco</li>
-      <li>✔ a embreagem falha</li>
-      <li>✔ o avaliador anota</li>
+      <li>❌ Saída errada</li>
+      <li>❌ Embreagem falha</li>
+      <li>❌ Nervosismo</li>
+      <li>❌ Detalhes que ninguém avisa</li>
     </ul>
-    <p><strong>E a reprovação vem por um erro bobo.</strong></p>
+    <p><strong>A maioria reprova por erro bobo, não por falta de aula.</strong></p>
   </div>
 </div>
 
@@ -145,25 +159,21 @@ p{font-size:17px;line-height:1.5;}
   <div class="container">
     <h2>O que é o Manual Anti-Reprovação</h2>
     <p>
-      Um guia prático em PDF para quem vai fazer a prova prática do Detran
-      e quer evitar erros simples que causam reprovação.
+      Um guia prático em PDF criado para ajudar você a evitar erros comuns na prova prática.
     </p>
-
-    <!-- MOCKUP -->
-    <img src="LINK-IMAGEM-MOCKUP.jpg" class="img" alt="Mockup do Manual">
+    <img src="LINK-MOCKUP-MANUAL.jpg" class="img" alt="Manual Anti-Reprovação">
   </div>
 </div>
 
-<!-- O QUE APRENDE -->
+<!-- ERROS -->
 <div class="section gray">
   <div class="container">
-    <h2>O que você vai aprender</h2>
+    <h2>Os erros que este guia ajuda você a evitar</h2>
     <ul class="list">
-      <li>✔ Controle correto da embreagem</li>
-      <li>✔ Como sair sem o carro morrer</li>
-      <li>✔ Erros mais comuns da prova</li>
-      <li>✔ Como agir diante do avaliador</li>
-      <li>✔ Como reduzir o nervosismo</li>
+      <li>❌ Erros de embreagem</li>
+      <li>❌ Falhas logo no início da prova</li>
+      <li>❌ Nervosismo que causa reprovação</li>
+      <li>❌ Detalhes anotados pelo avaliador</li>
     </ul>
   </div>
 </div>
@@ -171,12 +181,17 @@ p{font-size:17px;line-height:1.5;}
 <!-- BÔNUS -->
 <div class="section light">
   <div class="container">
-    <h2>🎁 Bônus Inclusos Hoje</h2>
-    <ul class="list">
-      <li><strong>Checklist Final da Prova</strong></li>
-      <li><strong>Roteiro Mental Anti-Nervosismo</strong></li>
-      <li><strong>Erros Bobos Que Reprovam</strong></li>
-    </ul>
+    <h2>Inclui 3 Bônus</h2>
+
+    <div class="carousel">
+      <img src="BONUS1.jpg" alt="Checklist Final da Prova">
+      <img src="BONUS2.jpg" alt="Roteiro Mental Anti-Nervosismo">
+      <img src="BONUS3.jpg" alt="Erros Bobos Que Reprovam">
+    </div>
+
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
+      Acesso completo hoje por R$27
+    </a>
   </div>
 </div>
 
@@ -185,39 +200,31 @@ p{font-size:17px;line-height:1.5;}
   <div class="container">
     <h2>Quem já usou recomenda</h2>
 
-    <div class="testimonial">
-      “Eu estava errando sempre na saída. Depois do manual fui muito mais confiante.”
-      <br><strong>— Lucas, SP</strong>
+    <div class="testimonials">
+      <img src="DEPO1.jpg" alt="Depoimento 1">
+      <img src="DEPO2.jpg" alt="Depoimento 2">
     </div>
-
-    <div class="testimonial">
-      “Simples, direto e sem enrolação. Me ajudou a não travar.”
-      <br><strong>— Mariana, RJ</strong>
-    </div>
-
-    <!-- IMAGEM OPCIONAL -->
-    <img src="LINK-IMAGEM-DEPOIMENTO.jpg" class="img" alt="Depoimentos">
   </div>
 </div>
 
-<!-- OFERTA -->
+<!-- OFERTA FINAL -->
 <div class="section light">
   <div class="container price">
     <p class="old">De R$97,00</p>
     <p class="new">Hoje por R$27,00</p>
 
-    <a href="SEU-LINK-DE-CHECKOUT-AQUI" class="cta">
-      QUERO CHEGAR MAIS CONFIANTE NA PROVA
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
+      EVITE A REPROVAÇÃO AGORA
     </a>
 
     <p style="text-align:center;font-size:14px;">
-      Garantia de 7 dias • Conteúdo digital
+      Acesso imediato em PDF • Garantia de 7 dias
     </p>
   </div>
 </div>
 
 <div class="floating">
-  <a href="SEU-LINK-DE-CHECKOUT-AQUI">🔥 Acessar agora por R$27</a>
+  <a href="https://pay.kiwify.com.br/8ZZjqY9">🔥 Acessar agora por R$27</a>
 </div>
 
 <div id="popup" class="popup"></div>
@@ -235,7 +242,7 @@ const popup=document.getElementById("popup");
 function showPopup(){
  popup.innerHTML="<strong>"+buyers[i]+"</strong><br>Manual Anti-Reprovação";
  popup.style.display="block";
- setTimeout(()=>{popup.style.display="none";},3500);
+ setTimeout(()=>{popup.style.display="none";},2800);
  i=(i+1)%buyers.length;
 }
 setTimeout(showPopup,4000);
@@ -243,4 +250,4 @@ setInterval(showPopup,37000);
 </script>
 
 </body>
-  </html>
+</html>

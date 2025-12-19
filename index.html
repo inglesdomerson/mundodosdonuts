@@ -69,12 +69,13 @@ p{font-size:17px;line-height:1.6;text-align:center;}
 .old{text-decoration:line-through;color:#777;}
 .new{font-size:38px;color:#0a7a2f;font-weight:800;}
 
-/* CARROSSEL BÔNUS */
+/* CARROSSEL (BÔNUS E DEPOIMENTOS) */
 .carousel{
   display:flex;
   gap:20px;
   overflow-x:auto;
   padding:20px 0;
+  scroll-behavior:smooth;
 }
 .carousel img{
   width:260px;
@@ -82,17 +83,19 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   flex-shrink:0;
 }
 
-/* DEPOIMENTOS */
-.testimonials{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-  justify-content:center;
+/* GARANTIA */
+.guarantee{
+  background:#f9f9f9;
+  border:2px dashed #0a7a2f;
+  padding:25px;
+  border-radius:10px;
+  max-width:600px;
+  margin:40px auto;
 }
-.testimonials img{
-  width:100%;
-  max-width:420px;
-  border-radius:8px;
+.guarantee h3{
+  text-align:center;
+  margin-bottom:10px;
+  color:#0a7a2f;
 }
 
 /* POPUP */
@@ -142,12 +145,8 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   <div class="container">
     <h1>ERROS SIMPLES REPROVAM NA PROVA PRÁTICA</h1>
     <p>Evite os erros que mais eliminam candidatos.</p>
-
     <img src="tituloft.png" class="img" alt="Manual Anti-Reprovação">
-
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
-      EVITE A REPROVAÇÃO AGORA
-    </a>
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">EVITE A REPROVAÇÃO AGORA</a>
   </div>
 </div>
 
@@ -168,11 +167,7 @@ p{font-size:17px;line-height:1.6;text-align:center;}
 <div class="section light">
   <div class="container">
     <h2>O que é o Manual Anti-Reprovação</h2>
-    <p>
-      Um guia prático em PDF criado para ajudar você a evitar erros comuns
-      na prova prática.
-    </p>
-
+    <p>Um guia prático em PDF criado para ajudar você a evitar erros comuns na prova prática.</p>
     <img src="mocup.jfif" class="img" alt="Manual Anti-Reprovação">
   </div>
 </div>
@@ -194,16 +189,12 @@ p{font-size:17px;line-height:1.6;text-align:center;}
 <div class="section light">
   <div class="container">
     <h2>Inclui 3 Bônus</h2>
-
     <div class="carousel">
       <img src="checklist.png" alt="Checklist Final da Prova">
       <img src="antinervosismo.png" alt="Roteiro Mental Anti-Nervosismo">
       <img src="errosbobos.png" alt="Erros Bobos Que Reprovam">
     </div>
-
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
-      Acesso completo hoje por R$27
-    </a>
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">Acesso completo hoje por R$27</a>
   </div>
 </div>
 
@@ -211,10 +202,25 @@ p{font-size:17px;line-height:1.6;text-align:center;}
 <div class="section gray">
   <div class="container">
     <h2>Quem já usou recomenda</h2>
-
-    <div class="testimonials">
+    <div class="carousel">
       <img src="print1.png" alt="Depoimento 1">
       <img src="print2.png" alt="Depoimento 2">
+      <img src="print3.png" alt="Depoimento 3">
+      <img src="print4.png" alt="Depoimento 4">
+      <img src="print5.png" alt="Depoimento 5">
+    </div>
+  </div>
+</div>
+
+<!-- GARANTIA -->
+<div class="section light">
+  <div class="container">
+    <div class="guarantee">
+      <h3>Garantia de 7 dias</h3>
+      <p>
+        Você pode acessar o material com tranquilidade.  
+        Se não fizer sentido para você, é só solicitar o reembolso dentro de 7 dias.
+      </p>
     </div>
   </div>
 </div>
@@ -224,21 +230,13 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   <div class="container price">
     <p class="old">De R$97,00</p>
     <p class="new">Hoje por R$27,00</p>
-
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
-      EVITE A REPROVAÇÃO AGORA
-    </a>
-
-    <p style="font-size:14px;">
-      Acesso imediato em PDF • Garantia de 7 dias
-    </p>
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">EVITE A REPROVAÇÃO AGORA</a>
+    <p style="font-size:14px;">Acesso imediato em PDF</p>
   </div>
 </div>
 
 <div class="floating">
-  <a href="https://pay.kiwify.com.br/8ZZjqY9">
-    🔥 Acessar agora por R$27
-  </a>
+  <a href="https://pay.kiwify.com.br/8ZZjqY9">🔥 Acessar agora por R$27</a>
 </div>
 
 <div id="popup" class="popup"></div>

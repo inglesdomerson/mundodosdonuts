@@ -33,6 +33,7 @@ h1{font-size:30px;}
 h2{font-size:24px;}
 h3{font-size:20px;}
 p{font-size:17px;line-height:1.6;text-align:center;}
+
 .list{
   max-width:600px;
   margin:20px auto;
@@ -76,7 +77,6 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   gap:20px;
   overflow-x:auto;
   padding:20px 0;
-  scroll-behavior:smooth;
 }
 .carousel img{
   width:260px;
@@ -91,49 +91,37 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   padding:25px;
   border-radius:10px;
   max-width:600px;
-  margin:40px auto 20px;
+  margin:40px auto;
 }
-.guarantee h3{
-  color:#0a7a2f;
-}
+.guarantee h3{color:#0a7a2f;}
 
 /* VALUE STACK */
-.value-stack{
+.value-box{
   max-width:600px;
-  margin:30px auto 0;
-  text-align:center;
-}
-.value-stack ul{
-  list-style:none;
-  padding:0;
-}
-.value-stack li{
+  margin:40px auto;
+  text-align:left;
   font-size:17px;
-  margin-bottom:8px;
 }
-.value-stack .total{
-  margin-top:15px;
+.value-item{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+.value-item span.old{
+  color:#777;
+  text-decoration:line-through;
+}
+.value-total{
+  text-align:center;
+  margin-top:20px;
   font-size:18px;
 }
-.value-stack .final{
+.value-final{
+  text-align:center;
   margin-top:10px;
-  font-size:26px;
+  font-size:30px;
   font-weight:800;
   color:#0a7a2f;
-}
-
-/* POPUP */
-.popup{
-  position:fixed;
-  bottom:90px;
-  left:20px;
-  background:#fff;
-  border-left:5px solid #0a7a2f;
-  padding:10px 14px;
-  border-radius:6px;
-  font-size:13px;
-  display:none;
-  z-index:999;
 }
 
 /* CTA FLUTUANTE */
@@ -146,18 +134,12 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   padding:14px;
   text-align:center;
   z-index:1000;
-  animation:pulse 1.6s infinite;
 }
 .floating a{
   color:#fff;
   font-size:18px;
   font-weight:700;
   text-decoration:none;
-}
-@keyframes pulse{
-  0%{transform:scale(1);}
-  50%{transform:scale(1.03);}
-  100%{transform:scale(1);}
 }
 </style>
 </head>
@@ -169,7 +151,7 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   <div class="container">
     <h1>ERROS SIMPLES REPROVAM NA PROVA PRÁTICA</h1>
     <p>Evite os erros que mais eliminam candidatos.</p>
-    <img src="tituloft.png" class="img" alt="Manual Anti-Reprovação">
+    <img src="tituloft.png" class="img">
     <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">EVITE A REPROVAÇÃO AGORA</a>
   </div>
 </div>
@@ -192,115 +174,54 @@ p{font-size:17px;line-height:1.6;text-align:center;}
 <div class="section light">
   <div class="container">
     <h2>O que é o Manual Anti-Reprovação</h2>
-    <p>Um guia prático em PDF criado para ajudar você a evitar erros comuns na prova prática.</p>
-    <img src="mocup.jfif" class="img" alt="Manual Anti-Reprovação">
+    <p>Guia prático em PDF para evitar erros comuns na prova prática.</p>
+    <img src="mocup.jfif" class="img">
   </div>
 </div>
 
-<!-- ERROS -->
-<div class="section gray">
-  <div class="container">
-    <h2>Os erros que este guia ajuda você a evitar</h2>
-    <ul class="list">
-      <li>❌ Erros de embreagem</li>
-      <li>❌ Falhas logo no início da prova</li>
-      <li>❌ Nervosismo que elimina candidatos</li>
-      <li>❌ Detalhes anotados pelo avaliador</li>
-    </ul>
-  </div>
-</div>
-
-<!-- BÔNUS -->
-<div class="section light">
-  <div class="container">
-    <h2>Inclui 3 Bônus</h2>
-    <div class="carousel">
-      <img src="checklist.png" alt="Checklist Final da Prova">
-      <img src="antinervosismo.png" alt="Roteiro Mental Anti-Nervosismo">
-      <img src="errosbobos.png" alt="Erros Bobos Que Reprovam">
-    </div>
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">Acesso completo hoje por R$27</a>
-  </div>
-</div>
-
-<!-- DEPOIMENTOS -->
-<div class="section gray">
-  <div class="container">
-    <h2>Quem já usou recomenda</h2>
-    <div class="carousel">
-      <img src="dep1.jfif">
-      <img src="dep2.jfif">
-      <img src="IMG-20251220-WA0099.jpg">
-      <img src="IMG-20251220-WA0100.jpg">
-      <img src="IMG-20251220-WA0101.jpg">
-    </div>
-  </div>
-</div>
-
-<!-- GARANTIA + VALUE STACK -->
-<div class="section light">
-  <div class="container">
-    <div class="guarantee">
-      <h3>Garantia de 7 dias</h3>
-      <p>Você pode acessar o material com tranquilidade.  
-      Se não fizer sentido para você, é só solicitar o reembolso dentro de 7 dias.</p>
-    </div>
-
-    <div <!-- VALUE STACK CHECKLIST -->
+<!-- BÔNUS + VALUE STACK -->
 <div class="section light">
   <div class="container">
 
     <h2>O que você recebe hoje</h2>
 
-    <div style="max-width:600px;margin:0 auto;text-align:left;font-size:17px;">
-      <p>✅ Manual Anti-Reprovação <span style="float:right;text-decoration:line-through;color:#777;">R$47,00</span></p>
-      <p>✅ Checklist Final da Prova <span style="float:right;text-decoration:line-through;color:#777;">R$20,00</span></p>
-      <p>✅ Roteiro Mental Anti-Nervosismo <span style="float:right;text-decoration:line-through;color:#777;">R$15,00</span></p>
-      <p>✅ Erros Bobos Que Reprovam <span style="float:right;text-decoration:line-through;color:#777;">R$15,00</span></p>
+    <div class="value-box">
+      <div class="value-item">
+        <span>✅ Manual Anti-Reprovação</span>
+        <span class="old">R$47,00</span>
+      </div>
+      <div class="value-item">
+        <span>✅ Checklist Final da Prova</span>
+        <span class="old">R$20,00</span>
+      </div>
+      <div class="value-item">
+        <span>✅ Roteiro Mental Anti-Nervosismo</span>
+        <span class="old">R$15,00</span>
+      </div>
+      <div class="value-item">
+        <span>✅ Erros Bobos Que Reprovam</span>
+        <span class="old">R$15,00</span>
+      </div>
     </div>
 
-    <hr style="margin:25px auto;max-width:600px;">
+    <div class="value-total">
+      Valor total: <span class="old">R$97,00</span>
+    </div>
 
-    <p style="text-align:center;font-size:18px;">
-      De <span style="
-  </div>
-</div>
+    <div class="value-final">
+      Hoje por R$27,00
+    </div>
 
-<!-- OFERTA FINAL -->
-<div class="section light">
-  <div class="container price">
-    <p class="old">De R$97,00</p>
-    <p class="new">Hoje por R$27,00</p>
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">EVITE A REPROVAÇÃO AGORA</a>
-    <p style="font-size:14px;">Acesso imediato em PDF</p>
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
+      EVITE A REPROVAÇÃO AGORA
+    </a>
+
   </div>
 </div>
 
 <div class="floating">
   <a href="https://pay.kiwify.com.br/8ZZjqY9">🔥 Acessar agora por R$27</a>
 </div>
-
-<div id="popup" class="popup"></div>
-
-<script>
-const buyers=[
- "Lucas, SP acabou de comprar",
- "Juliana, RJ garantiu acesso",
- "Rafael, MG confirmou pagamento",
- "Camila, PR acessou o manual"
-];
-let i=0;
-const popup=document.getElementById("popup");
-
-function showPopup(){
- popup.innerHTML="<strong>"+buyers[i]+"</strong><br>Manual Anti-Reprovação";
- popup.style.display="block";
- setTimeout(()=>{popup.style.display="none";},2800);
- i=(i+1)%buyers.length;
-}
-setTimeout(showPopup,4000);
-setInterval(showPopup,37000);
-</script>
 
 </body>
 </html>

@@ -28,9 +28,10 @@ body{
 }
 
 /* TEXTO */
-h1,h2{text-align:center;margin-bottom:20px;}
+h1,h2,h3{text-align:center;margin-bottom:20px;}
 h1{font-size:30px;}
 h2{font-size:24px;}
+h3{font-size:20px;}
 p{font-size:17px;line-height:1.6;text-align:center;}
 .list{
   max-width:600px;
@@ -69,7 +70,7 @@ p{font-size:17px;line-height:1.6;text-align:center;}
 .old{text-decoration:line-through;color:#777;}
 .new{font-size:38px;color:#0a7a2f;font-weight:800;}
 
-/* CARROSSEL (BÔNUS E DEPOIMENTOS) */
+/* CARROSSEL */
 .carousel{
   display:flex;
   gap:20px;
@@ -90,11 +91,34 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   padding:25px;
   border-radius:10px;
   max-width:600px;
-  margin:40px auto;
+  margin:40px auto 20px;
 }
 .guarantee h3{
+  color:#0a7a2f;
+}
+
+/* VALUE STACK */
+.value-stack{
+  max-width:600px;
+  margin:30px auto 0;
   text-align:center;
-  margin-bottom:10px;
+}
+.value-stack ul{
+  list-style:none;
+  padding:0;
+}
+.value-stack li{
+  font-size:17px;
+  margin-bottom:8px;
+}
+.value-stack .total{
+  margin-top:15px;
+  font-size:18px;
+}
+.value-stack .final{
+  margin-top:10px;
+  font-size:26px;
+  font-weight:800;
   color:#0a7a2f;
 }
 
@@ -153,6 +177,7 @@ p{font-size:17px;line-height:1.6;text-align:center;}
 <!-- DOR -->
 <div class="section dark">
   <div class="container">
+    <h3>Você fez autoescola, treinou… mas na hora da prova:</h3>
     <ul class="list">
       <li>❌ Saída errada</li>
       <li>❌ Embreagem falha</li>
@@ -203,24 +228,34 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   <div class="container">
     <h2>Quem já usou recomenda</h2>
     <div class="carousel">
-      <img src="dep1.jfif" alt="Depoimento 1">
-      <img src="dep2.jfif" alt="Depoimento 2">
-      <img src="IMG-20251220-WA0099.jpg" alt="Depoimento 3">
-      <img src="IMG-20251220-WA0100.jpg" alt="Depoimento 4">
-      <img src="IMG-20251220-WA0101.jpg" alt="Depoimento 5">
+      <img src="dep1.jfif">
+      <img src="dep2.jfif">
+      <img src="IMG-20251220-WA0099.jpg">
+      <img src="IMG-20251220-WA0100.jpg">
+      <img src="IMG-20251220-WA0101.jpg">
     </div>
   </div>
 </div>
 
-<!-- GARANTIA -->
+<!-- GARANTIA + VALUE STACK -->
 <div class="section light">
   <div class="container">
     <div class="guarantee">
       <h3>Garantia de 7 dias</h3>
-      <p>
-        Você pode acessar o material com tranquilidade.  
-        Se não fizer sentido para você, é só solicitar o reembolso dentro de 7 dias.
-      </p>
+      <p>Você pode acessar o material com tranquilidade.  
+      Se não fizer sentido para você, é só solicitar o reembolso dentro de 7 dias.</p>
+    </div>
+
+    <div class="value-stack">
+      <h3>O que você recebe hoje</h3>
+      <ul>
+        <li>📘 Manual Anti-Reprovação — <span class="old">R$97</span></li>
+        <li>📝 Checklist Final da Prova — <span class="old">R$29</span></li>
+        <li>🧠 Roteiro Mental Anti-Nervosismo — <span class="old">R$19</span></li>
+        <li>⚠️ Erros Bobos Que Reprovam — <span class="old">R$22</span></li>
+      </ul>
+      <div class="total"><strong>Valor total:</strong> <span class="old">R$167</span></div>
+      <div class="final">Hoje por apenas R$27</div>
     </div>
   </div>
 </div>

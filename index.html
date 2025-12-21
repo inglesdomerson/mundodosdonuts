@@ -5,168 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manual Anti-Reprovação – Prova Prática</title>
 
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f.fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1593572325126710');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {
+  content_name: 'Manual Anti-Reprovação',
+  content_category: 'Infoproduto',
+  value: 27.00,
+  currency: 'BRL'
+});
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1593572325126710&ev=PageView&noscript=1"/>
+</noscript>
+<!-- END META PIXEL -->
+
 <style>
 *{box-sizing:border-box}
-
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
   background:#f1f1f1;
   color:#222;
 }
-
-/* SEÇÕES */
 .section{padding:50px 20px;}
 .dark{background:#111;color:#fff;}
 .yellow{background:#ffcc00;}
 .light{background:#ffffff;}
 .gray{background:#eaeaea;}
-
-.container{
-  max-width:900px;
-  margin:0 auto;
-}
-
-/* TEXTO */
+.container{max-width:900px;margin:0 auto;}
 h1,h2,h3{text-align:center;margin-bottom:20px;}
 h1{font-size:30px;}
 h2{font-size:24px;}
 h3{font-size:20px;}
 p{font-size:17px;line-height:1.6;text-align:center;}
-
-.list{
-  max-width:600px;
-  margin:20px auto;
-  padding-left:20px;
-}
+.list{max-width:600px;margin:20px auto;padding-left:20px;}
 .list li{margin-bottom:10px;font-size:17px;}
-
-/* IMAGENS */
-.img{
-  width:100%;
-  max-width:620px;
-  margin:30px auto;
-  display:block;
-  border-radius:8px;
-}
-
-/* CTA */
+.img{width:100%;max-width:620px;margin:30px auto;display:block;border-radius:8px;}
 .cta{
-  display:block;
-  background:#0a7a2f;
-  color:#fff;
-  text-align:center;
-  padding:20px;
-  border-radius:8px;
-  font-size:20px;
-  font-weight:700;
-  text-decoration:none;
-  margin:30px auto;
-  max-width:420px;
+  display:block;background:#0a7a2f;color:#fff;text-align:center;
+  padding:20px;border-radius:8px;font-size:20px;font-weight:700;
+  text-decoration:none;margin:30px auto;max-width:420px;
 }
-.cta:hover{background:#086127;}
-
-/* CARROSSEL */
-.carousel{
-  display:flex;
-  gap:20px;
-  overflow-x:auto;
-  padding:20px 0;
-}
-.carousel img{
-  width:260px;
-  border-radius:8px;
-  flex-shrink:0;
-}
-
-/* GARANTIA */
+.carousel{display:flex;gap:20px;overflow-x:auto;padding:20px 0;}
+.carousel img{width:260px;border-radius:8px;flex-shrink:0;}
 .guarantee{
-  background:#f9f9f9;
-  border:2px dashed #0a7a2f;
-  padding:25px;
-  border-radius:10px;
-  max-width:600px;
-  margin:40px auto;
+  background:#f9f9f9;border:2px dashed #0a7a2f;
+  padding:25px;border-radius:10px;max-width:600px;margin:40px auto;
 }
-.guarantee h3{color:#0a7a2f;}
-
-/* VALUE STACK */
-.value-box{
-  max-width:600px;
-  margin:40px auto;
-  text-align:left;
-  font-size:17px;
-}
-.value-item{
-  display:flex;
-  justify-content:space-between;
-  margin-bottom:12px;
-}
-.value-item span.old{
-  color:#777;
-  text-decoration:line-through;
-}
-.value-total{
-  text-align:center;
-  margin-top:20px;
-  font-size:18px;
-}
-.value-final{
-  text-align:center;
-  margin-top:10px;
-  font-size:30px;
-  font-weight:800;
-  color:#0a7a2f;
-}
-
-/* POPUP */
+.value-box{max-width:600px;margin:40px auto;text-align:left;font-size:17px;}
+.value-item{display:flex;justify-content:space-between;margin-bottom:12px;}
+.value-item .old{text-decoration:line-through;color:#777;}
+.value-total{text-align:center;margin-top:20px;font-size:18px;}
+.value-final{text-align:center;margin-top:10px;font-size:30px;font-weight:800;color:#0a7a2f;}
 .popup{
-  position:fixed;
-  bottom:90px;
-  left:20px;
-  background:#fff;
-  border-left:5px solid #0a7a2f;
-  padding:10px 14px;
-  border-radius:6px;
-  font-size:13px;
-  display:none;
-  z-index:999;
-  box-shadow:0 4px 10px rgba(0,0,0,.15);
+  position:fixed;bottom:90px;left:20px;background:#fff;
+  border-left:5px solid #0a7a2f;padding:10px 14px;
+  border-radius:6px;font-size:13px;display:none;z-index:999;
 }
-
-/* CTA FLUTUANTE */
 .floating{
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
-  background:#0a7a2f;
-  padding:14px;
-  text-align:center;
-  z-index:1000;
+  position:fixed;bottom:0;left:0;right:0;
+  background:#0a7a2f;padding:14px;text-align:center;z-index:1000;
 }
-.floating a{
-  color:#fff;
-  font-size:18px;
-  font-weight:700;
-  text-decoration:none;
-}
+.floating a{color:#fff;font-size:18px;font-weight:700;text-decoration:none;}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <div class="section yellow">
   <div class="container">
     <h1>VAI FAZER A PROVA PRÁTICA DO DETRAN?</h1>
     <p>Evite os erros que mais eliminam candidatos.</p>
     <img src="tituloft.png" class="img">
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">QUERO CHEGAR PREPARADO NA PROVA</a>
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta"
+       onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
+       QUERO CHEGAR PREPARADO NA PROVA
+    </a>
   </div>
 </div>
 
-<!-- DOR -->
 <div class="section dark">
   <div class="container">
     <h3>Você fez autoescola, treinou… mas na hora da prova:</h3>
@@ -180,34 +110,29 @@ p{font-size:17px;line-height:1.6;text-align:center;}
   </div>
 </div>
 
-<!-- PRODUTO -->
 <div class="section light">
   <div class="container">
     <h2>O que é o Manual Anti-Reprovação</h2>
-    <p>O Manual Anti-Reprovação é um guia prático em PDF criado para ajudar você a evitar os erros mais comuns da prova prática.
-Ele mostra os detalhes que reprovam candidatos todos os dias e quase ninguém explica.
-O foco é reduzir o nervosismo, corrigir falhas simples e fazer você chegar mais confiante para a prova.</p>
+    <p>Guia prático em PDF para evitar erros comuns da prova prática.</p>
     <img src="mocup.jfif" class="img">
   </div>
 </div>
 
-<!-- BÔNUS -->
 <div class="section light">
   <div class="container">
     <h2>Bônus que fazem diferença na prova</h2>
-    <p>Conteúdos complementares para corrigir erros simples e reduzir o nervosismo antes da avaliação. Acesso vitalício a todas atualizações futuras</p>
     <div class="carousel">
       <img src="checklist.png">
       <img src="antinervosismo.png">
       <img src="errosbobos.png">
     </div>
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
-      QUERO O ACESSO COMPLETO POR R$27
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta"
+       onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
+       QUERO O ACESSO COMPLETO POR R$27
     </a>
   </div>
 </div>
 
-<!-- DEPOIMENTOS -->
 <div class="section gray">
   <div class="container">
     <h2>Relatos de quem passou pela prova</h2>
@@ -221,63 +146,40 @@ O foco é reduzir o nervosismo, corrigir falhas simples e fazer você chegar mai
   </div>
 </div>
 
-<!-- GARANTIA -->
 <div class="section light">
   <div class="container">
     <div class="guarantee">
       <h3>Garantia de 7 dias</h3>
-      <p>Você pode acessar o material com tranquilidade.<br>
-      Se não fizer sentido, é só solicitar reembolso dentro de 7 dias.</p>
+      <p>Se não fizer sentido, é só solicitar reembolso.</p>
     </div>
   </div>
 </div>
 
-<!-- VALUE STACK -->
 <div class="section light">
   <div class="container">
-
     <h2>O que você recebe hoje</h2>
-
     <div class="value-box">
-      <div class="value-item">
-        <span>✅ Manual Anti-Reprovação</span>
-        <span class="old">R$47,00</span>
-      </div>
-      <div class="value-item">
-        <span>✅ Checklist Final da Prova</span>
-        <span class="old">R$20,00</span>
-      </div>
-      <div class="value-item">
-        <span>✅ Roteiro Mental Anti-Nervosismo</span>
-        <span class="old">R$15,00</span>
-      </div>
-      <div class="value-item">
-        <span>✅ Erros Bobos Que Reprovam</span>
-        <span class="old">R$15,00</span>
-      </div>
+      <div class="value-item"><span>Manual</span><span class="old">R$47</span></div>
+      <div class="value-item"><span>Checklist</span><span class="old">R$20</span></div>
+      <div class="value-item"><span>Roteiro Mental</span><span class="old">R$15</span></div>
+      <div class="value-item"><span>Erros Bobos</span><span class="old">R$15</span></div>
     </div>
-
-    <div class="value-total">
-      Valor total: <span class="old">R$97,00</span>
-    </div>
-
-    <div class="value-final">
-      Hoje por R$27,00
-    </div>
-
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta">
-      QUERO EVITAR A REPROVAÇÃO
+    <div class="value-total">Valor total: <span class="old">R$97</span></div>
+    <div class="value-final">Hoje por R$27</div>
+    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta"
+       onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
+       QUERO EVITAR A REPROVAÇÃO
     </a>
-
   </div>
 </div>
 
-<!-- CTA FLUTUANTE -->
 <div class="floating">
-  <a href="https://pay.kiwify.com.br/8ZZjqY9">🔥 Acessar agora por R$27</a>
+  <a href="https://pay.kiwify.com.br/8ZZjqY9"
+     onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
+     🔥 Acessar agora por R$27
+  </a>
 </div>
 
-<!-- POPUP -->
 <div id="popup" class="popup"></div>
 
 <script>
@@ -289,7 +191,6 @@ const buyers=[
 ];
 let i=0;
 const popup=document.getElementById("popup");
-
 function showPopup(){
  popup.innerHTML="<strong>"+buyers[i]+"</strong><br>Manual Anti-Reprovação";
  popup.style.display="block";

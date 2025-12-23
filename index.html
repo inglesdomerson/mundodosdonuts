@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manual Anti-Reprovação – Prova Prática</title>
+<title>Manual Anti-Reprovação | Método Prático</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 <!-- META PIXEL -->
 <script>
@@ -33,173 +37,68 @@ src="https://www.facebook.com/tr?id=1593572325126710&ev=PageView&noscript=1"/>
 <!-- END META PIXEL -->
 
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f1f1f1;
-  color:#222;
-}
-.section{padding:50px 20px;}
-.dark{background:#111;color:#fff;}
-.yellow{background:#ffcc00;}
-.light{background:#ffffff;}
-.gray{background:#eaeaea;}
-.container{max-width:900px;margin:0 auto;}
-h1,h2,h3{text-align:center;margin-bottom:20px;}
-h1{font-size:30px;}
-h2{font-size:24px;}
-h3{font-size:20px;}
-p{font-size:17px;line-height:1.6;text-align:center;}
-.list{max-width:600px;margin:20px auto;padding-left:20px;}
-.list li{margin-bottom:10px;font-size:17px;}
-.img{width:100%;max-width:620px;margin:30px auto;display:block;border-radius:8px;}
-.cta{
-  display:block;background:#0a7a2f;color:#fff;text-align:center;
-  padding:20px;border-radius:8px;font-size:20px;font-weight:700;
-  text-decoration:none;margin:30px auto;max-width:420px;
-}
-.carousel{display:flex;gap:20px;overflow-x:auto;padding:20px 0;}
-.carousel img{width:260px;border-radius:8px;flex-shrink:0;}
-.guarantee{
-  background:#f9f9f9;border:2px dashed #0a7a2f;
-  padding:25px;border-radius:10px;max-width:600px;margin:40px auto;
-}
-.value-box{max-width:600px;margin:40px auto;text-align:left;font-size:17px;}
-.value-item{display:flex;justify-content:space-between;margin-bottom:12px;}
-.value-item .old{text-decoration:line-through;color:#777;}
-.value-total{text-align:center;margin-top:20px;font-size:18px;}
-.value-final{text-align:center;margin-top:10px;font-size:30px;font-weight:800;color:#0a7a2f;}
-.popup{
-  position:fixed;bottom:90px;left:20px;background:#fff;
-  border-left:5px solid #0a7a2f;padding:10px 14px;
-  border-radius:6px;font-size:13px;display:none;z-index:999;
-}
-.floating{
-  position:fixed;bottom:0;left:0;right:0;
-  background:#0a7a2f;padding:14px;text-align:center;z-index:1000;
-}
-.floating a{color:#fff;font-size:18px;font-weight:700;text-decoration:none;}
+:root{
+--bg-color:#050505;--card-bg:#151515;--highlight-yellow:#FFD700;
+--alert-red:#FF2E2E;--cta-green:#00E640;--text-white:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg-color);color:var(--text-white);
+font-family:Roboto,sans-serif;line-height:1.5}
+h1,h2,h3{font-family:Anton,sans-serif;text-transform:uppercase}
+.container{max-width:500px;margin:0 auto;padding:0 20px}
+img{max-width:100%;display:block;border-radius:8px}
+.cta-button{
+display:flex;justify-content:center;align-items:center;width:100%;
+background:linear-gradient(180deg,#00FF47,#00C236);
+color:#000;font-family:Anton;font-size:24px;
+padding:18px;border-radius:8px;text-decoration:none;
+animation:pulse 1.5s infinite;margin:25px 0}
+@keyframes pulse{50%{transform:scale(1.02)}}
 </style>
 </head>
 
 <body>
 
-<div class="section yellow">
-  <div class="container">
-    <h1>VAI FAZER A PROVA PRÁTICA DO DETRAN?</h1>
-    <p>Evite os erros que mais eliminam candidatos.</p>
-    <img src="tituloft.png" class="img">
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta"
-       onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
-       QUERO CHEGAR PREPARADO NA PROVA
-    </a>
-  </div>
+<div class="container">
+
+<h1>REPROVADO NA <span style="color:#FF2E2E">BALIZA?</span> PREPARE O BOLSO.</h1>
+<p style="color:#ccc">Ou evite o prejuízo de <strong>R$ 800,00</strong></p>
+
+<img src="tituloft.png" alt="Examinador">
+
+<a href="https://pay.kiwify.com.br/8ZZjqY9"
+class="cta-button"
+onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
+QUERO EVITAR A REPROVAÇÃO
+</a>
+
+<h2 style="color:#FFD700;text-align:center">O MANUAL ANTI-REPROVAÇÃO</h2>
+<img src="mocup.jfif" alt="Mockup Manual">
+
+<h3 style="margin-top:30px">BÔNUS INCLUSOS</h3>
+
+<img src="checklist.png" alt="Checklist">
+<img src="antinervosismo.png" alt="Roteiro Mental">
+<img src="errosbobos.png" alt="Erros Bobos">
+
+<h2 style="margin-top:40px;text-align:center">QUEM LEU, PASSOU</h2>
+
+<img src="dep1.jfif">
+<img src="dep2.jfif">
+<img src="IMG-20251220-WA0099.jpg">
+<img src="IMG-20251220-WA0100.jpg">
+<img src="IMG-20251220-WA0101.jpg">
+
+<h2 style="margin-top:40px;text-align:center;color:#FFD700">
+HOJE POR R$ 27,00
+</h2>
+
+<a href="https://pay.kiwify.com.br/8ZZjqY9"
+class="cta-button"
+onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
+QUERO PASSAR DE PRIMEIRA
+</a>
+
 </div>
-
-<div class="section dark">
-  <div class="container">
-    <h3>Você fez autoescola, treinou… mas na hora da prova:</h3>
-    <ul class="list">
-      <li>❌ Saída errada</li>
-      <li>❌ Embreagem falha</li>
-      <li>❌ Nervosismo</li>
-      <li>❌ Detalhes que ninguém avisa</li>
-    </ul>
-    <p><strong>A maioria reprova por erro bobo, não por falta de aula.</strong></p>
-  </div>
-</div>
-
-<div class="section light">
-  <div class="container">
-    <h2>O que é o Manual Anti-Reprovação</h2>
-    <p>Guia prático em PDF para evitar erros comuns da prova prática.</p>
-    <img src="mocup.jfif" class="img">
-  </div>
-</div>
-
-<div class="section light">
-  <div class="container">
-    <h2>Bônus que fazem diferença na prova</h2>
-    <div class="carousel">
-      <img src="checklist.png">
-      <img src="antinervosismo.png">
-      <img src="errosbobos.png">
-    </div>
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta"
-       onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
-       QUERO O ACESSO COMPLETO POR R$27
-    </a>
-  </div>
-</div>
-
-<div class="section gray">
-  <div class="container">
-    <h2>Relatos de quem passou pela prova</h2>
-    <div class="carousel">
-      <img src="dep1.jfif">
-      <img src="dep2.jfif">
-      <img src="IMG-20251220-WA0099.jpg">
-      <img src="IMG-20251220-WA0100.jpg">
-      <img src="IMG-20251220-WA0101.jpg">
-    </div>
-  </div>
-</div>
-
-<div class="section light">
-  <div class="container">
-    <div class="guarantee">
-      <h3>Garantia de 7 dias</h3>
-      <p>Se não fizer sentido, é só solicitar reembolso.</p>
-    </div>
-  </div>
-</div>
-
-<div class="section light">
-  <div class="container">
-    <h2>O que você recebe hoje</h2>
-    <div class="value-box">
-      <div class="value-item"><span>Manual</span><span class="old">R$47</span></div>
-      <div class="value-item"><span>Checklist</span><span class="old">R$20</span></div>
-      <div class="value-item"><span>Roteiro Mental</span><span class="old">R$15</span></div>
-      <div class="value-item"><span>Erros Bobos</span><span class="old">R$15</span></div>
-    </div>
-    <div class="value-total">Valor total: <span class="old">R$97</span></div>
-    <div class="value-final">Hoje por R$27</div>
-    <a href="https://pay.kiwify.com.br/8ZZjqY9" class="cta"
-       onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
-       QUERO EVITAR A REPROVAÇÃO
-    </a>
-  </div>
-</div>
-
-<div class="floating">
-  <a href="https://pay.kiwify.com.br/8ZZjqY9"
-     onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL'});">
-     🔥 Acessar agora por R$27
-  </a>
-</div>
-
-<div id="popup" class="popup"></div>
-
-<script>
-const buyers=[
- "Lucas, SP acabou de comprar",
- "Juliana, RJ garantiu acesso",
- "Rafael, MG confirmou pagamento",
- "Camila, PR acessou o manual"
-];
-let i=0;
-const popup=document.getElementById("popup");
-function showPopup(){
- popup.innerHTML="<strong>"+buyers[i]+"</strong><br>Manual Anti-Reprovação";
- popup.style.display="block";
- setTimeout(()=>{popup.style.display="none";},2500);
- i=(i+1)%buyers.length;
-}
-setTimeout(showPopup,5000);
-setInterval(showPopup,32000);
-</script>
 
 </body>
 </html>
